@@ -1,7 +1,16 @@
 const fibonacci = function(n) {
+
+    // Convert input to a number if its a string
+    const num = Number(n);
+
+    // Handle negative numbers
+    if (num < 0) {
+        return "OOPS"
+    }
+
     // Handle edge cases
-    if (n <= 0) return 0;
-    if (n === 1 || n === 2) return 1;
+    if (num <= 0) return 0;
+    if (num === 1 || num === 2) return 1;
 
     // Start with the first two numbers
     let previousNumber = 1;
