@@ -4,6 +4,9 @@ const palindromes = function () {
 
     // Reverse the cleaned string
     const reversed = cleaned.split('').reverse().join('');
+
+    // Compare the cleaned string with its reverse
+    return cleaned === reversed;
 };
 
 // Do not edit below this line
