@@ -1,4 +1,4 @@
-const palindromes = function () {
+const palindromes = function (str) {
     // Remove all non-alphanumeric characters and convert to lowercase
     const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
