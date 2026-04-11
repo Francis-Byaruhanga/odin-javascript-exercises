@@ -7,9 +7,14 @@ const fibonacci = function(n) {
     let previousNumber = 1;
     let currentNumber = 1;
 
-    
+    // Iterate from position 3 to n
+    for ( let i = 3; i <= n; i++) {
+        let nextNumber = previousNumber + currentNumber;
+        previousNumber = currentNumber;
+        currentNumber = nextNumber;
+    }
 
-
+    return currentNumber;
 };
 
 // Do not edit below this line
